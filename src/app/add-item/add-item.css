@@ -1,0 +1,29 @@
+.add-form {
+  margin-bottom: 24px;
+}
+
+.add-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.add-row {
+  display: flex;
+  gap: 10px;
+}
+
+.add-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.add-row button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
