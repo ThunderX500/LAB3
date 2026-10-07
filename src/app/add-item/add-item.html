@@ -1,0 +1,14 @@
+<form class="add-form" (ngSubmit)="addItem()">
+  <label for="new-item">Nouvel item</label>
+  <div class="add-row">
+    <input
+      id="new-item"
+      name="newItem"
+      type="text"
+      [(ngModel)]="newItem"
+      placeholder="brocolli"
+      autocomplete="off"
+    >
+    <button type="submit">Ajouter</button>
+  </div>
+</form>
