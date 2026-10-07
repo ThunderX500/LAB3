@@ -1,0 +1,14 @@
+<section class="list-section">
+  <h2>Items</h2>
+
+  <ul class="shopping-list">
+    @for (item of items; track $index) {
+      <li class="shopping-item">
+        <span>{{ item }}</span>
+        <!-- TODO (remaining half): add the Supprimer button and emit a delete event. -->
+      </li>
+    } @empty {
+      <li class="empty-message">La liste est vide.</li>
+    }
+  </ul>
+</section>
