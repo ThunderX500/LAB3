@@ -1,0 +1,9 @@
+<main class="page">
+  <section class="card">
+    <h1>Liste de courses</h1>
+
+    <app-add-item (itemAdded)="addItem($event)"></app-add-item>
+
+    <app-shopping-list [items]="items"></app-shopping-list>
+  </section>
+</main>
