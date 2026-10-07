@@ -18,8 +18,3 @@ npm start
 ```
 *Open [http://localhost:4200/](http://localhost:4200/) in your browser to view the app.*
 
-### Run the Tests
-Execute the unit tests:
-```bash
-npm test
-```
