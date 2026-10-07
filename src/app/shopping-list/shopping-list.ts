@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-list',
@@ -8,5 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ShoppingList {
   @Input() items: string[] = [];
 
-  // TODO (remaining half): add an @Output() event for deleting an item.
+  @Output() itemDeleted = new EventEmitter<number>();
+
+  deleteItem(index: number): void {
+    this.itemDeleted.emit(index);
+  }
 }

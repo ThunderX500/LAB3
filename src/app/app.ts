@@ -15,5 +15,7 @@ export class App {
     this.items = [...this.items, item];
   }
 
-  // TODO (remaining half): add deleteItem(index: number) here.
+  deleteItem(index: number): void {
+    this.items = this.items.filter((_, i) => i !== index);
+  }
 }

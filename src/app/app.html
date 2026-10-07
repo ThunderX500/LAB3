@@ -4,6 +4,6 @@
 
     <app-add-item (itemAdded)="addItem($event)"></app-add-item>
 
-    <app-shopping-list [items]="items"></app-shopping-list>
+    <app-shopping-list [items]="items" (itemDeleted)="deleteItem($event)"></app-shopping-list>
   </section>
 </main>

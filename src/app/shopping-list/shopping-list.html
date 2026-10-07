@@ -5,7 +5,7 @@
     @for (item of items; track $index) {
       <li class="shopping-item">
         <span>{{ item }}</span>
-        <!-- TODO (remaining half): add the Supprimer button and emit a delete event. -->
+        <button type="button" class="delete-btn" (click)="deleteItem($index)">Supprimer</button>
       </li>
     } @empty {
       <li class="empty-message">La liste est vide.</li>
